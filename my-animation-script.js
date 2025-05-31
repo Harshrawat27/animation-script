@@ -355,7 +355,8 @@ document.querySelectorAll('[para-reveal]').forEach((text) => {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: text,
-      start: 'top bottom',
+      start: 'top 80%',
+      // start: 'top bottom',
       end: 'bottom top',
     },
   });
